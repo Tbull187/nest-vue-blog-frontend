@@ -1,6 +1,6 @@
 <template>
    <div>
-        <div class="col-md-12 form-wrapper">
+        <div class="col-md-6 form-wrapper">
           <h2> Create Post </h2>
           <form id="create-post-form" @submit.prevent="createPost">
                <div class="form-group col-md-12">
