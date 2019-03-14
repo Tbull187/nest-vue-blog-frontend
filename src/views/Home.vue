@@ -6,7 +6,7 @@
        <p>A blog website built with Nest.js | Vue.js | MongoDB</p>
 
        <div v-if="posts.length === 0">
-            <h2> No post found at the moment </h2>
+            <h2>No posts found.</h2>
         </div>
       </div>
 

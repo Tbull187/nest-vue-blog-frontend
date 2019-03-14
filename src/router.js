@@ -5,12 +5,16 @@ import EditComponent from '@/components/post/Edit';
 import CreateComponent from '@/components/post/Create';
 import PostComponent from '@/components/post/Post';
 
-Vue.use(Router)
+import LogIn from '@/components/common/LogIn';
+
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
   routes: [
-    { path: '/', redirect: { name: 'home' } },
+    //{ path: '/', redirect: { name: 'home' } },
+    { path: '/', redirect: { name: 'LogIn' } },
+    { path: '/login', name: 'LogIn', component: LogIn },
     { path: '/home', name: 'home', component: HomeComponent },
     { path: '/create', name: 'Create', component: CreateComponent },
     { path: '/edit/:id', name: 'Edit', component: EditComponent },
